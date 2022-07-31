@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fancy Form</title>
+
+    <!-- You may add more stuff here -->
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- You may reorganise the whole HTML, as long as your form achieves the same effect. -->
+    <form onsubmit="return !1" id="form">
+      <div>
+        <div>
+          <label for="input-address">ETH Address</label>
+          <input id="input-address" />
+          <span id="input-address-error" class="error">Address must not be empty!</span>
+        </div>
+        <div>
+          <label for="input-amount">Amount to send</label>
+          <input id="input-amount" />
+          <span id="input-amount-error" class="error">Amount must not be empty!</span>
+        </div>
+        <div>
+          <label for="input-otp">OTP Authentication</label>
+          <input type="number" id="input-otp" />
+        </div>
+      </div>
+      <button>SEND TOKENS</button>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
